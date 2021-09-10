@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="39c4157b-e5b6-40b7-bd52-2e7bf67a3fd1" name="Activity1" linkedPackageId="5b385056-9d58-46b4-abde-605610d6bb26" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="d5f1788a-75c8-45d4-996f-0f05c16ac29f">
+      <profileInstance Id="4e92dfe7-bd14-4a31-a8da-86eb2d35ab00" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="258b2d1d-cc0a-473f-9d2b-591526b3365b">
+      <profileInstance Id="cb70b166-b827-43c9-b33e-14de1b422268" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="9a875c7f-7e17-489a-934e-958bab37240f" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="00214a9e-a311-4094-9674-bdb0a9b534d8" />
+        <nodes>
+          <initialNode Id="5f55f94f-9293-4ef7-b78f-8c14caecc291" name="Initial1" isLeaf="false">
+            <elementDefinition Id="53d3d7b6-1e15-4751-a533-cbad5aa8e1c9" />
+            <flowNodeTargets>
+              <controlFlow Id="e2b13db6-fd19-47b1-b644-c634aa87d7ed" isLeaf="false">
+                <opaqueActionMoniker Id="21487bf3-610b-4b65-9dd3-fc0d826c326c" LastKnownName="WM_CREATE:&#xD;&#xA;1.  初始化背景&#xD;&#xA;2.  初始化玩家飞机&#xD;&#xA;3.  启动所有的定时器" />
+                <elementDefinition Id="46a781c3-1dc1-455c-8c82-90e072796518" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="21487bf3-610b-4b65-9dd3-fc0d826c326c" name="WM_CREATE:&#xD;&#xA;1.  初始化背景&#xD;&#xA;2.  初始化玩家飞机&#xD;&#xA;3.  启动所有的定时器" isLeaf="false">
+            <elementDefinition Id="e186364f-fe02-4eca-85e0-864770d8f096" />
+            <flowNodeTargets>
+              <controlFlow Id="a5f29b1b-cca4-4966-8068-38be4ccd4a25" isLeaf="false">
+                <opaqueActionMoniker Id="4b50029a-27df-4306-8c6e-b8b8a0f0836e" LastKnownName="WM_PAINT:&#xD;&#xA;1.  显示背景&#xD;&#xA;2.  显示玩家飞机&#xD;&#xA;3.  显示所有炮弹&#xD;&#xA;4.  显示所有敌人飞机&#xD;&#xA;5.  显示所有爆炸敌人飞机" />
+                <elementDefinition Id="2861d9fd-3c5e-416f-bef0-51a505a20bdd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4b50029a-27df-4306-8c6e-b8b8a0f0836e" name="WM_PAINT:&#xD;&#xA;1.  显示背景&#xD;&#xA;2.  显示玩家飞机&#xD;&#xA;3.  显示所有炮弹&#xD;&#xA;4.  显示所有敌人飞机&#xD;&#xA;5.  显示所有爆炸敌人飞机" isLeaf="false">
+            <elementDefinition Id="3a836028-b415-49cb-88b4-cb08acfd3498" />
+            <flowNodeTargets>
+              <controlFlow Id="79e2b550-9b9b-43ef-a545-51475d23f195" isLeaf="false">
+                <opaqueActionMoniker Id="cd471eb3-f6ab-49ce-97e6-d09ec0cc70a6" LastKnownName="WM_KEYDOWN:&#xD;&#xA;1. 玩家飞机移动&#xD;&#xA;2. 重绘&#xD;&#xA;" />
+                <elementDefinition Id="068f8a0d-dc1c-4325-abc1-3e1adec3bfff" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cd471eb3-f6ab-49ce-97e6-d09ec0cc70a6" name="WM_KEYDOWN:&#xD;&#xA;1. 玩家飞机移动&#xD;&#xA;2. 重绘&#xD;&#xA;" isLeaf="false">
+            <elementDefinition Id="da1c9a99-d8ed-43b0-8f09-41bb0b0ea455" />
+            <flowNodeTargets>
+              <controlFlow Id="261e30b3-98ef-4868-9eb8-ff3233fe9ce2" isLeaf="false">
+                <opaqueActionMoniker Id="80907574-b75a-4467-b197-9b22362ab0e8" LastKnownName="WM_TIMER" />
+                <elementDefinition Id="05f01ef0-2060-4cbb-9dcd-490b231258b9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="80907574-b75a-4467-b197-9b22362ab0e8" name="WM_TIMER" isLeaf="false">
+            <elementDefinition Id="5f81359a-cce6-4290-a4d5-c2df22cbeb43" />
+            <flowNodeTargets>
+              <controlFlow Id="f7e24eca-4fc4-4c24-a466-405f40ff019f" isLeaf="false">
+                <opaqueActionMoniker Id="351378a1-4852-4f9d-b0a7-37ec7d1d1809" LastKnownName="1. 背景移动" />
+                <elementDefinition Id="bd36aae8-e4df-4b84-97d7-dc1baf7b12b7" />
+              </controlFlow>
+              <controlFlow Id="2bec2aa5-70c8-457c-bc36-f2d301b7b6dd" isLeaf="false">
+                <opaqueActionMoniker Id="5bf8e4ed-7b2f-481f-a436-c106dbc93dde" LastKnownName="2. 玩家飞机发射炮弹" />
+                <elementDefinition Id="34f4d84e-a53e-428c-b97b-d01b9a7ec4c8" />
+              </controlFlow>
+              <controlFlow Id="2d26e1a4-dbae-410d-993b-485ffe61e003" isLeaf="false">
+                <opaqueActionMoniker Id="8b83b5a7-744c-469f-a4c0-6ff202bf42e5" LastKnownName="3. 所有炮弹移动&#xD;&#xA;3.1 判断炮弹打敌人飞机" />
+                <elementDefinition Id="454ff71d-1911-407e-a7c1-9b62e2dd766e" />
+              </controlFlow>
+              <controlFlow Id="b319820e-a6f5-428e-a877-cf22c069e3a4" isLeaf="false">
+                <opaqueActionMoniker Id="b4f4b48d-9d7e-418d-8d4d-59c5f8741117" LastKnownName="4. 创建敌人飞机" />
+                <elementDefinition Id="4bb29bbe-e1d0-4887-85ee-4f6f261138b1" />
+              </controlFlow>
+              <controlFlow Id="4d34024b-5ec0-43a0-9fb6-ad1bafc0baf3" isLeaf="false">
+                <opaqueActionMoniker Id="1f98e31b-b29e-4f73-8e0c-2cd2fbcc3ba5" LastKnownName="5. 敌人飞机移动&#xD;&#xA;5.1 判断是否撞玩家，游戏结束" />
+                <elementDefinition Id="04a58b16-bfa7-4107-a099-bcdf57dcae92" />
+              </controlFlow>
+              <controlFlow Id="5565ec08-1638-42d2-8511-494c2fb9900d" isLeaf="false">
+                <opaqueActionMoniker Id="19619e17-d759-47ea-91ae-9a7f55e52192" LastKnownName="6. 切换爆炸的效果图" />
+                <elementDefinition Id="689353b9-1874-4e88-b3a0-40c1eea15764" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="351378a1-4852-4f9d-b0a7-37ec7d1d1809" name="1. 背景移动" isLeaf="false">
+            <elementDefinition Id="04330530-8af5-4024-a0e5-09dddaddcb33" />
+            <flowNodeTargets>
+              <controlFlow Id="7e0ffad6-00dd-464a-baef-409af374c53c" isLeaf="false">
+                <opaqueActionMoniker Id="46fc866f-09a9-4085-b8f5-9e86f2463944" LastKnownName="重绘" />
+                <elementDefinition Id="51f51252-51a7-4549-912e-b43eb9b542b6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="5bf8e4ed-7b2f-481f-a436-c106dbc93dde" name="2. 玩家飞机发射炮弹" isLeaf="false">
+            <elementDefinition Id="6417beca-62e1-424e-9593-39446b7583c8" />
+            <flowNodeTargets>
+              <controlFlow Id="547effe2-6a99-47df-bbe0-ba1f29e7c454" isLeaf="false">
+                <opaqueActionMoniker Id="46fc866f-09a9-4085-b8f5-9e86f2463944" LastKnownName="重绘" />
+                <elementDefinition Id="aaa4db14-8693-4851-bd0f-286c1df522c9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8b83b5a7-744c-469f-a4c0-6ff202bf42e5" name="3. 所有炮弹移动&#xD;&#xA;3.1 判断炮弹打敌人飞机" isLeaf="false">
+            <elementDefinition Id="fb2a2f24-4a26-4cf3-92a2-2e49a6e2e345" />
+            <flowNodeTargets>
+              <controlFlow Id="a13a7fd2-0b47-4dec-98c5-5bd9ca2d9315" isLeaf="false">
+                <opaqueActionMoniker Id="46fc866f-09a9-4085-b8f5-9e86f2463944" LastKnownName="重绘" />
+                <elementDefinition Id="89bc4901-805e-4569-bfd1-8a9583fd9521" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b4f4b48d-9d7e-418d-8d4d-59c5f8741117" name="4. 创建敌人飞机" isLeaf="false">
+            <elementDefinition Id="63a61076-479a-4a4b-9a81-c089d7335bd5" />
+            <flowNodeTargets>
+              <controlFlow Id="79121d3c-d87e-4dd8-98cf-a17c446fa557" isLeaf="false">
+                <activityFinalNodeMoniker Id="fdfbfc44-af7c-4126-ad73-5c4fc9ea2223" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="ff49732c-22b0-4081-a39a-fdef4d91f4da" />
+              </controlFlow>
+              <controlFlow Id="bcf03cec-d88f-45a7-ac3d-ccbe699e23c9" isLeaf="false">
+                <opaqueActionMoniker Id="46fc866f-09a9-4085-b8f5-9e86f2463944" LastKnownName="重绘" />
+                <elementDefinition Id="d2dcf985-d476-4e35-b590-8452b6ff983e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1f98e31b-b29e-4f73-8e0c-2cd2fbcc3ba5" name="5. 敌人飞机移动&#xD;&#xA;5.1 判断是否撞玩家，游戏结束" isLeaf="false">
+            <elementDefinition Id="b643fc6b-3a60-4884-a114-e5aca2b48216" />
+            <flowNodeTargets>
+              <controlFlow Id="795dc05c-7ecd-422c-aa27-782102f8e174" isLeaf="false">
+                <opaqueActionMoniker Id="46fc866f-09a9-4085-b8f5-9e86f2463944" LastKnownName="重绘" />
+                <elementDefinition Id="68eae0dc-c41d-4961-b125-6419e1af6b25" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="fdfbfc44-af7c-4126-ad73-5c4fc9ea2223" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="6c039687-f429-4c9a-801d-b62416e7a494" />
+          </activityFinalNode>
+          <opaqueAction Id="19619e17-d759-47ea-91ae-9a7f55e52192" name="6. 切换爆炸的效果图" isLeaf="false">
+            <elementDefinition Id="5e80bc06-b635-4415-a024-714338045a6e" />
+            <flowNodeTargets>
+              <controlFlow Id="a8302eea-ec46-497e-82e9-fb9a3432854a" isLeaf="false">
+                <opaqueActionMoniker Id="46fc866f-09a9-4085-b8f5-9e86f2463944" LastKnownName="重绘" />
+                <elementDefinition Id="307f3c8d-009e-4877-93e5-9d4435f8735f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="46fc866f-09a9-4085-b8f5-9e86f2463944" name="重绘" isLeaf="false">
+            <elementDefinition Id="2901bfce-69b2-48be-9a36-f6db8a88b436" />
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="5b385056-9d58-46b4-abde-605610d6bb26" name="plane">
+    <elementDefinition Id="6099a1dc-4aea-420c-bb3c-2beac1aa6b15" />
+  </package>
+</activityRootModel>
